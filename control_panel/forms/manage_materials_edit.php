@@ -66,33 +66,33 @@
         <div class="step-content">
             <label>Call Number:</label>
             <div class="input-control text full-size">
-                <!-- <input data-input="eCallNumber" value="<?php //echo $row['Call_Number']; ?>" type="text"> -->
-                <select name="eCallNumber">
-                    <?php  
-                        echo '<option value="" disabled selected>Choose an option...</option>';
+                <input data-input="eCallNumber" value="<?php echo $row['Call_Number']; ?>" type="text"> 
+                <!-- <select name="eCallNumber"> -->
+                   <!--  <?php  
+                        //echo '<option value="" disabled selected>Choose an option...</option>';
 
-                        echo '<option value="000 Generalities"' . ($row['Call_Number'] == '000 Generalities' ? ' selected' : '') . '>000 Generalities</option>';
+                        //echo '<option value="000 Generalities"' . ($row['Call_Number'] == '000 Generalities' ? ' selected' : '') . '>000 Generalities</option>';
 
-                        echo '<option value="100 Philosophy & psychology"' . ($row['Call_Number'] == '100 Philosophy & psychology' ? ' selected' : '') . '>100 Philosophy & psychology</option>';
+                        //echo '<option value="100 Philosophy & psychology"' . ($row['Call_Number'] == '100 Philosophy & psychology' ? ' selected' : '') . '>100 Philosophy & psychology</option>';
 
-                        echo '<option value="200 Religion"' . ($row['Call_Number'] == '200 Religion' ? ' selected' : '') . '>200 Religion</option>';
+                        //echo '<option value="200 Religion"' . ($row['Call_Number'] == '200 Religion' ? ' selected' : '') . '>200 Religion</option>';
 
-                        echo '<option value="300 Social sciences"' . ($row['Call_Number'] == '300 Social sciences' ? ' selected' : '') . '>300 Social sciences</option>';
+                        //echo '<option value="300 Social sciences"' . ($row['Call_Number'] == '300 Social sciences' ? ' selected' : '') . '>300 Social sciences</option>';
 
-                        echo '<option value="400 Language"' . ($row['Call_Number'] == '400 Language' ? ' selected' : '') . '>400 Language</option>';
+                        //echo '<option value="400 Language"' . ($row['Call_Number'] == '400 Language' ? ' selected' : '') . '>400 Language</option>';
 
-                        echo '<option value="500 Natural sciences & mathematics"' . ($row['Call_Number'] == '500 Natural sciences & mathematics' ? ' selected' : '') . '>500 Natural sciences & mathematics</option>';
+                        //echo '<option value="500 Natural sciences & mathematics"' . ($row['Call_Number'] == '500 Natural sciences & mathematics' ? ' selected' : '') . '>500 Natural sciences & mathematics</option>';
 
-                        echo '<option value="600 Technology (Applied sciences)"' . ($row['Call_Number'] == '600 Technology (Applied sciences)' ? ' selected' : '') . '>600 Technology (Applied sciences)</option>';
+                        //echo '<option value="600 Technology (Applied sciences)"' . ($row['Call_Number'] == '600 Technology (Applied sciences)' ? ' selected' : '') . '>600 Technology (Applied sciences)</option>';
 
-                        echo '<option value="700 The arts"' . ($row['Call_Number'] == '700 The arts' ? ' selected' : '') . '>700 The arts</option>';
+                        //echo '<option value="700 The arts"' . ($row['Call_Number'] == '700 The arts' ? ' selected' : '') . '>700 The arts</option>';
 
-                        echo '<option value="800 Literature & rhetoric"' . ($row['Call_Number'] == '800 Literature & rhetoric' ? ' selected' : '') . '>800 Literature & rhetoric</option>';
+                        //echo '<option value="800 Literature & rhetoric"' . ($row['Call_Number'] == '800 Literature & rhetoric' ? ' selected' : '') . '>800 Literature & rhetoric</option>';
 
-                        echo '<option value="900 Geography & history"' . ($row['Call_Number'] == '900 Geography & history' ? ' selected' : '') . '>900 Geography & history</option>';
+                        //echo '<option value="900 Geography & history"' . ($row['Call_Number'] == '900 Geography & history' ? ' selected' : '') . '>900 Geography & history</option>';
                     ?>
-                </select>
-            </div>
+                </select>-->
+            </div> 
 
             <label>Edition:</label>
             <div class="input-control text full-size">

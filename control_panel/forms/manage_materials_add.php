@@ -68,9 +68,9 @@
     </div>
     <div class="step">
         <div class="step-content">
-            <label>Call Number:</label>
+            <!-- <label>Call Number:</label>
             <div class="input-control text full-size"> 
-                <!-- <input data-input="aCallNumber" type="text" placeholder="Type the Call Number here..."> -->
+                
                 <select name="aCallNumber">
                 <option value="" selected disabled>Choose a Call number</option>
                 <option value="000 Generalities">000 Generalities</option>
@@ -84,7 +84,13 @@
                 <option value="800 Literature & rhetoric">800 Literature & rhetoric</option>
                 <option value="900 Geography & history">900 Geography & history</option>
             </select>
-            </div><br><br>
+            </div> -->
+            <label>Call Number:</label>
+            <div class="input-control text full-size">
+                <input data-input="aCallNumber" type="text">
+            </div>
+
+            <br><br>
             <label>Edition:</label>
             <div class="input-control text full-size">
                 <input data-input="aEdition" type="text" placeholder="Type the book edition here..." autofocus>

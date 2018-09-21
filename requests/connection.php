@@ -38,6 +38,10 @@
             return mysqli_fetch_assoc($this->query);
         }
 
+        function check_error() {
+            return mysqli_error($this->connection);
+        }
+
         function close() {
             mysqli_close($this->connection);
         }

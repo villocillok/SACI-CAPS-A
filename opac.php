@@ -40,7 +40,8 @@
 <div id="main-container" class="container">
     <h1> <strong>O</strong>nline <strong>P</strong>ublic <strong>A</strong>ccess <strong>C</strong>atalog</h1>
     <hr style="background-color:#493867;"><br>
-    sdf <br>
+    <!-- sdf -->
+     <br>
     <table id="materials-table" class="table striped border bordered">
         <thead class="table-header">
             <tr>
@@ -74,7 +75,13 @@
                 $connection2 = new Connection();
                 $connection2->open();
 
-                $connection->query("SELECT * FROM works INNER JOIN authors ON works.Author_ID=authors.Author_ID INNER JOIN book ON works.Book_ID=book.Book_ID INNER JOIN publishers ON book.Publisher_ID=publisher.Publisher_ID INNER JOIN categories ON book.Category_ID=categories.Category_ID INNER JOIN section ON book.Section_ID=section.Section_ID WHERE book.Status='active' GROUP BY book.Book_Title");
+                $connection->query("SELECT * FROM works
+                    INNER JOIN authors ON works.Author_ID=authors.Author_ID
+                    INNER JOIN book ON works.Book_ID=book.Book_ID
+                    INNER JOIN publishers ON book.Publisher_ID=publisher.Publisher_ID
+                    INNER JOIN categories ON book.Category_ID=categories.Category_ID
+                    INNER JOIN section ON book.Section_ID=section.Section_ID
+                    WHERE book.Status='active' GROUP BY book.Book_Title");
 
                 while($row = $connection->fetch_assoc()) {
                     $bookID = $row['Book_ID'];

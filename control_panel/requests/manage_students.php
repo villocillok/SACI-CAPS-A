@@ -22,8 +22,6 @@
         $department = $connection->escape_string($_POST['department']);
 
         $connection->query("SELECT * FROM borrower WHERE Borrower_ID='$borrowerID'");
-
-        echo json_encode(array('status' => 'Failed', 'message' => $connection->num_rows()));
                 
         if($connection->num_rows() == 0) {
             $connection->query("SELECT * FROM borrower WHERE Borrower_First_Name='$borrowerFirstName' AND Borrower_Last_Name='$borrowerLastName'");
@@ -36,7 +34,7 @@
 
                     echo json_encode(array('status' => 'Success', 'message' => 'The borrower has been added.'));
                 } else {
-                    echo json_encode(array('status' => 'Failed', 'message' => 'Failed to add borrower.'));
+                    echo json_encode(array('status' => 'Failed', 'message' => 'Failed to add borrower. ' . $connection->check_error()));
                 }
             } else {
                 echo json_encode(array('status' => 'Failed', 'message' => 'This borrower already exists.'));

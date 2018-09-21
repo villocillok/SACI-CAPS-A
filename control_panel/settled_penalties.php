@@ -91,7 +91,12 @@
 
                             // $connection->query("SELECT * FROM borrow INNER JOIN barcodes ON borrow.Barcode_Number=barcodes.Barcode_Number INNER JOIN book ON barcodes.Book_ID=Book.Book_ID INNER JOIN borrow ON borrow.Borrow_ID=borrow.Borrow_ID INNER JOIN `return` ON borrow.Borrow_ID=return.Borrow_ID INNER JOIN penalties ON return.Return_ID=penalties.Return_ID");
 
-                            $connection->query("SELECT * FROM borrow_details INNER JOIN barcodes ON borrow_details.Barcode_Number=barcodes.Barcode_Number INNER JOIN book ON barcodes.Book_ID=book.Book_ID INNER JOIN borrow ON borrow_details.Borrow_ID=borrow.Borrow_ID INNER JOIN `return` ON borrow_details.Borrow_Details_ID=return.Borrow_Details_ID INNER JOIN penalties ON return.Return_ID=penalties.Return_ID");
+                            $connection->query("SELECT * FROM borrow_details
+                                INNER JOIN barcodes ON borrow_details.Barcode_Number=barcodes.Barcode_Number
+                                INNER JOIN book ON barcodes.Book_ID=book.Book_ID
+                                INNER JOIN borrow ON borrow_details.Borrow_ID=borrow.Borrow_ID
+                                INNER JOIN `return` ON borrow_details.Borrow_Details_ID=`return`.Borrow_Details_ID
+                                INNER JOIN penalties ON `return`.Return_ID=penalties.Return_ID");
 
 
 
